@@ -22,10 +22,15 @@ targets:
         BUNDLE_DISPLAY_NAME: "NewsPet"
         MARKETING_VERSION: 1.0
         CURRENT_PROJECT_VERSION: 1
-        INFOPLIST_FILE: NewsPet/Info.plist
+        INFOPLIST_FILE: NewsPet/ApplicationLayer/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: NewsPet
+      configs:
+        Debug:
+            SERVER_URL: https://jsonplaceholder.typicode.com
+        Release:
+            SERVER_URL: https://jsonplaceholder.typicode.com
     info:
-        path: NewsPet/Info.plist
+        path: NewsPet/ApplicationLayer/Info.plist
         properties:
             CFBundleDisplayName: NewsPet
             CFBundleIconName: Assets.xcassets/AppIcon.appiconset
@@ -39,3 +44,4 @@ targets:
                   - UISceneConfigurationName: Default Configuration
                     UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
             UILaunchStoryboardName: LaunchScreen
+            ServerUrl: $SERVER_URL
