@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  NewsPet
+
+  Created by Damir Yackupov on 23.09.2022.
+  
+*/
+
+// MARK: - General
+"OK" = "ОК";
+"Save" = "Сохранить";
+"Cancel" = "Отмена";
+"Close" = "Закрыть";
+"Error" = "Ошибка";
+"Unknown" = "Неизвестно";
+"Loading" = "Загрузка...";
+"Refresh" = "Обновить";
+"TryAgain" = "Повторить";
+
+// MARK: - Errors
+"UnknownError" = "Неизвестная ошибка";
+
+"EmptyNewsError" = "Пустая новость 😢";
+
+// MARK: - Post List
+"NewsListTitle" = "Новости";
+
+// MARK: - Post
+"NewsTitle" = "Подробно";
