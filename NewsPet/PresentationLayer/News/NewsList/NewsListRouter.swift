@@ -20,7 +20,9 @@ final class NewsListRouter: NewsListRoutingLogic {
     }
 
     func routeToNews(newsId: Int) {
-        
+        let factory = NewsFactory(newsId: newsId)
+        let vc = factory.create()
+        viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 
     func presentAlert(error: Error) {
