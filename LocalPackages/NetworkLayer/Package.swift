@@ -16,8 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "NetworkLayer",
-            dependencies: [],
-            path: "Sources"
+            dependencies: []
         )
     ]
 )
